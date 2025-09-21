@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landio — AI Automation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,500;0,700;1,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script defer src="js/main.js"></script>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='46' fill='%23111'/%3E%3Cpath d='M62 28c-9 0-16 7-16 16s7 16 16 16c6 0 11-3 14-8-1 11-10 20-22 20-12 0-22-10-22-22s10-22 22-22c3 0 6 1 8 2z' fill='%23fff'/%3E%3C/svg%3E"/>
+</head>
+<body>
+    <header class="site-header">
+        <div class="container nav">
+            <div class="brand">
+                <span class="logo" aria-hidden="true">◐</span>
+                <span class="brand-name">Landio</span>
+            </div>
+            <nav class="menu" aria-label="Main Navigation">
+                <a href="#services">Services</a>
+                <a href="#process">Process</a>
+                <a href="#pricing">Pricing</a>
+                <a href="#blog">Blog</a>
+                <a href="#contact">Contact</a>
+            </nav>
+            <a class="btn btn-outline small" href="#get-template">Get Template</a>
+            <button class="menu-toggle" aria-label="Open menu"><span></span><span></span><span></span></button>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero" id="home">
+            <div class="hero-bg" aria-hidden="true"></div>
+            <div class="container hero-inner">
+                <div class="badge">NEW GEN AI AUTOMATION PARTNER</div>
+                <h1 class="headline">
+                    <span>Automate Smarter.</span>
+                    <span>Grow Faster.</span>
+                    <span class="serif">With AI.</span>
+                </h1>
+                <p class="subheadline">AI Automation for Modern Businesses Made Simple</p>
+                <div class="cta-group">
+                    <a href="#contact" class="btn btn-primary">Book A Free Call</a>
+                </div>
+                <div class="socials" aria-label="social links">
+                    <a href="#" aria-label="X">✕</a>
+                    <a href="#" aria-label="Instagram">◎</a>
+                    <a href="#" aria-label="LinkedIn">in</a>
+                    <a href="#" aria-label="Facebook">f</a>
+                </div>
+                <div class="scroll-indicator" aria-hidden="true">▾</div>
+            </div>
+        </section>
+
+        <section class="benefits section" id="services">
+            <div class="container">
+                <header class="section-header">
+                    <h2>Why Choose Us?</h2>
+                    <p>Everything you need to automate, optimize, and scale</p>
+                </header>
+
+                <div class="cards three">
+                    <article class="card">
+                        <div class="icon">⚡</div>
+                        <h3>Real-Time Intelligence</h3>
+                        <p>Access accurate, real-time data to drive smarter decisions.</p>
+                    </article>
+                    <article class="card">
+                        <div class="icon">📈</div>
+                        <h3>Measurable Impact</h3>
+                        <p>Track performance, uncover insights, and achieve data-backed growth.</p>
+                    </article>
+                    <article class="card">
+                        <div class="icon">🔗</div>
+                        <h3>Seamless Integration</h3>
+                        <p>Connect tools, teams, and workflows with intelligent automation.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="pricing section" id="pricing">
+            <div class="container">
+                <header class="section-header">
+                    <h2>Flexible Plans for Everyone</h2>
+                    <p>Choose a plan that fits your goals and scale as you grow</p>
+                    <div class="billing-toggle" role="group" aria-label="Billing period">
+                        <button class="toggle active" data-billing="monthly">Monthly</button>
+                        <button class="toggle" data-billing="yearly">Yearly <span class="save">Save 20%</span></button>
+                    </div>
+                </header>
+                <div class="cards three pricing-cards">
+                    <article class="card plan" data-plan="starter">
+                        <h3>Starter</h3>
+                        <p class="price"><span class="amount" data-monthly="50" data-yearly="40">$50</span><span class="per">/mo</span></p>
+                        <ul class="features">
+                            <li>3 Automated Workflows</li>
+                            <li>Basic AI Assistant Access</li>
+                            <li>Email + Slack Integration</li>
+                            <li>Monthly Performance Reports</li>
+                            <li>Email Support</li>
+                        </ul>
+                        <a href="#contact" class="btn btn-outline">Get Started</a>
+                    </article>
+                    <article class="card plan featured" data-plan="pro" aria-label="Popular plan">
+                        <div class="pill">Popular</div>
+                        <h3>Pro</h3>
+                        <p class="price"><span class="amount" data-monthly="90" data-yearly="72">$90</span><span class="per">/mo</span></p>
+                        <ul class="features">
+                            <li>10+ Automated Workflows</li>
+                            <li>Advanced AI Assistant Features</li>
+                            <li>Bi-Weekly Strategy Reviews</li>
+                            <li>CRM + Marketing Tool Integrations</li>
+                            <li>Priority Support</li>
+                        </ul>
+                        <a href="#contact" class="btn btn-primary">Start Pro</a>
+                    </article>
+                    <article class="card plan" data-plan="enterprise">
+                        <h3>Enterprise</h3>
+                        <p class="price custom">Custom Pricing</p>
+                        <ul class="features">
+                            <li>Unlimited Custom Workflows</li>
+                            <li>Dedicated AI Strategist</li>
+                            <li>API & Private Integrations</li>
+                            <li>Real-Time Performance Dashboards</li>
+                            <li>24/7 Premium Support + SLA</li>
+                        </ul>
+                        <a href="#contact" class="btn btn-outline">Talk to Sales</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta section" id="contact">
+            <div class="container cta-inner">
+                <h2>Ready to Automate?</h2>
+                <p>Book a free strategy call and see how AI can streamline your operations.</p>
+                <a href="#" class="btn btn-primary large">Book A Free Call</a>
+            </div>
+        </section>
+
+        <section class="section process" id="process">
+            <div class="container">
+                <header class="section-header">
+                    <h2>Our Process</h2>
+                    <p>From discovery to deployment, we keep it simple and effective</p>
+                </header>
+                <div class="cards three">
+                    <article class="card">
+                        <div class="icon">🔎</div>
+                        <h3>Discover</h3>
+                        <p>We audit your tools and workflows to uncover the highest-ROI automations.</p>
+                    </article>
+                    <article class="card">
+                        <div class="icon">🧩</div>
+                        <h3>Design</h3>
+                        <p>We architect reliable AI workflows that integrate cleanly with your stack.</p>
+                    </article>
+                    <article class="card">
+                        <div class="icon">🚀</div>
+                        <h3>Deploy & Iterate</h3>
+                        <p>Launch quickly, measure impact, then iterate for compounding gains.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section blog" id="blog">
+            <div class="container">
+                <header class="section-header">
+                    <h2>From the Blog</h2>
+                    <p>Insights on automation, growth, and intelligent operations</p>
+                </header>
+                <div class="cards three">
+                    <article class="card">
+                        <h3>5 Automations That Save Hours Weekly</h3>
+                        <p class="muted">A practical playbook for sales, marketing, and ops teams.</p>
+                        <a class="btn btn-outline small" href="#">Read Post</a>
+                    </article>
+                    <article class="card">
+                        <h3>Designing Reliable AI Workflows</h3>
+                        <p class="muted">Avoid common pitfalls and ship with confidence.</p>
+                        <a class="btn btn-outline small" href="#">Read Post</a>
+                    </article>
+                    <article class="card">
+                        <h3>Metrics That Matter</h3>
+                        <p class="muted">How to measure automation impact beyond vanity metrics.</p>
+                        <a class="btn btn-outline small" href="#">Read Post</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section faq" id="faq">
+            <div class="container">
+                <header class="section-header">
+                    <h2>FAQs</h2>
+                    <p>Quick answers to common questions</p>
+                </header>
+                <div class="faq-list">
+                    <details class="faq-item">
+                        <summary>How fast can we launch?</summary>
+                        <p>Most clients see first automations in 1–2 weeks depending on scope.</p>
+                    </details>
+                    <details class="faq-item">
+                        <summary>Do you support custom integrations?</summary>
+                        <p>Yes. We build secure private integrations and provide API support.</p>
+                    </details>
+                    <details class="faq-item">
+                        <summary>What if we need enterprise support?</summary>
+                        <p>We offer 24/7 support with SLAs under the Enterprise plan.</p>
+                    </details>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <div class="brand">
+                <span class="logo" aria-hidden="true">◐</span>
+                <span class="brand-name">Landio</span>
+            </div>
+            <p>© <span id="year"></span> Landio. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script defer src="js/main.js"></script>
+</body>
+</html>
+
+
